@@ -6,7 +6,6 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(217, 54%, 11%);
 }
 
 .attribution {
@@ -18,9 +17,13 @@ body {
 }
 
 .container {
-  /* max-width: 1440px; */
+  max-width: 1440px;
+  height: 100vh;
 
-  margin-top: 200px;
+  background-color: hsl(217, 54%, 11%);
+  margin: 0 auto;
+
+  /* margin-top: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,10 +118,4 @@ hr {
 
 .creator-text span {
   color: hsl(0, 0%, 100%);
-}
-
-@media (max-width: 430px) {
-  .container {
-    background-color: red;
-  }
 }
