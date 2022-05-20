@@ -23,7 +23,6 @@ body {
   background-color: hsl(217, 54%, 11%);
   margin: 0 auto;
 
-  /* margin-top: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +45,10 @@ body {
   color: hsl(0, 0%, 100%);
   font-size: 22px;
   margin-bottom: 18px;
+}
+.card-heading:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .card-text {
@@ -119,3 +122,5 @@ hr {
 .creator-text span {
   color: hsl(0, 0%, 100%);
 }
+
+/* https://github.com/sarahmonem/nft-preview-card-component-main/blob/master/style.css */
