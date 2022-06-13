@@ -35,10 +35,38 @@ body {
   border-radius: 12px;
 }
 
-.nft-card-image img {
+.nft-card-img-con {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.equilibrium-img {
   width: 100%;
   border-radius: 9px;
-  margin-bottom: 15px;
+  opacity: 1;
+}
+
+.hover-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.nft-card-img-con:hover .hover-icon {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon {
+  background-color: hsla(178, 100%, 50%, 0.466);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
 }
 
 .card-heading {
@@ -46,6 +74,7 @@ body {
   font-size: 22px;
   margin-bottom: 18px;
 }
+
 .card-heading:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
@@ -119,8 +148,13 @@ hr {
   color: hsl(215, 51%, 70%);
 }
 
-.creator-text span {
+.creator-name {
   color: hsl(0, 0%, 100%);
+}
+
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 /* https://github.com/sarahmonem/nft-preview-card-component-main/blob/master/style.css */
